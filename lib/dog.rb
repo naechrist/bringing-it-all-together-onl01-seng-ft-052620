@@ -52,7 +52,9 @@ class Dog
     self.new(hash_attributes)
   end
   
-  def self.find_by_id 
-    
+  def self.find_by_id(id)
+    sql = <<-SQL
+      
+    sql
   end
 end
