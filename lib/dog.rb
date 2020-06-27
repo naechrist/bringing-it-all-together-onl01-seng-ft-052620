@@ -69,7 +69,8 @@ class Dog
       FROM dogs 
       WHERE name = ?, breed = ?
     SQL
-  DB[:conn].execute(sql, name, breed)
+  DB[:conn].execute(sql, name, breed).first 
+  if 
   end
   
 end
