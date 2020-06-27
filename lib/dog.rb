@@ -29,6 +29,6 @@ class Dog
       INSERT INTO dogs (name, breed)
       VALUES (?, ?)
     SQL
-      DB[:conn].execute(sql)
+      @id = DB[:conn].execute(sql)
   end
 end
