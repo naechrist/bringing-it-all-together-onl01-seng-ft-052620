@@ -70,7 +70,9 @@ class Dog
       WHERE name = ?, breed = ?
     SQL
   DB[:conn].execute(sql, name, breed).first 
-  if 
+  if dog 
+    new_dog = self.new_from_db(dog)
+    
   end
   
 end
