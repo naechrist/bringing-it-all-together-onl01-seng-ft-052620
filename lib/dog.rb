@@ -51,4 +51,8 @@ class Dog
     :breed => row[2] }
     self.new(hash_attributes)
   end
+  
+  def self.find_by_id 
+    
+  end
 end
